@@ -3,8 +3,14 @@
     margin: 8rem auto;
     background-color: var(--color-grey-light-2);
     box-shadow: var(--shadow-dark);
-
     min-height: 50rem;
+    // css不允许使用variables定义max-with，所以我们使用sass中的variables
+    @media screen and (max-width:$bg-largest) {
+        margin: 0;
+        // responsive 当屏幕变小的时候，font-size变小，可能会影响屏幕设置
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 .header {

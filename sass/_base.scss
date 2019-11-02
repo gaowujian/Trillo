@@ -1,5 +1,5 @@
-
-
+$bg-largest: 75em; //1200px
+$bg-large: 68.75em; // 1100px
 // css variables,  different from scss variables
 
 :root {
@@ -32,6 +32,9 @@
 
 html {
     font-size: 62.5%;
+    @media screen and (max-width:$bg-large) {
+        font-size: 50%;
+    }
 }
   
 body {
